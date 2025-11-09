@@ -1,14 +1,32 @@
-title: I'm learning!
+title: Sugampret's Learning Journey
 author: Sugampret Jaya
 email: djadoel97@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Sugampret Jaya is currently learning how to build his personal blog
-  using Jekyll and GitHub repository. Wish me some joy and fun learning all these new things!
+  Welcome to Sugampret Jaya's personal blog! Follow along as I explore the exciting world
+  of web development, Jekyll, GitHub, and share insights from my learning adventures.
+  Join me on this journey of continuous growth and discovery!
 
 # social links
 twitter_username: your-twitter-handle # DO NOT include the @ character, or else the build will fail!
 github_username:  your-github-handle # DO NOT include the @ character, or else the build will fail!
 
-show_excerpts: true # set to false to remove excerpts on the homepage
+show_excerpts: true # set to true to show post excerpts on the homepage
 
+# Minima theme settings
 theme: minima
+minima:
+  skin: classic
+  date_format: "%b %-d, %Y"
+
+# Build settings
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+
+# Pagination
+paginate: 10
+paginate_path: "/page:num/"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
